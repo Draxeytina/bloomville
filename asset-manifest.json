@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bloomville/static/css/main.2644adcb.css",
+    "main.js": "/bloomville/static/js/main.007b94b7.js",
+    "static/js/787.4b89c7c9.chunk.js": "/bloomville/static/js/787.4b89c7c9.chunk.js",
+    "static/media/logo.png": "/bloomville/static/media/logo.1a342247e45acbd2a909.png",
+    "index.html": "/bloomville/index.html",
+    "main.2644adcb.css.map": "/bloomville/static/css/main.2644adcb.css.map",
+    "main.007b94b7.js.map": "/bloomville/static/js/main.007b94b7.js.map",
+    "787.4b89c7c9.chunk.js.map": "/bloomville/static/js/787.4b89c7c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2644adcb.css",
+    "static/js/main.007b94b7.js"
+  ]
+}
