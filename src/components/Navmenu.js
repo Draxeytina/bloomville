@@ -31,13 +31,14 @@ function Navmenu() {
                 <NavDropdown.Item as={Link} to="/subsidiaries/logitap-freight">
                   Logitap Freight Services
                 </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/subsidiaries/bloomville-media">
                   Bloomville Media
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/subsidiaries/mayville-brands">
                   Mayville Brands
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/subsidiaries/logitap-express">
                   Logitap Express
                 </NavDropdown.Item>

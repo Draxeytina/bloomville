@@ -1,6 +1,12 @@
 function BloomvilleConsultancy() {
   return (
-    <h1>Bloomville Consultancy</h1>
+    <div>
+      <h1>Bloomville Consultancy</h1>
+      <p>
+        Established in 2016, Bloomville Consultancy PBC is a division that specializes in business
+        formation and consultancy.
+      </p>
+    </div>
   );
 }
 

@@ -12,6 +12,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Infomercials from './pages/Infomercials';
 import PageNotFound from './pages/PageNotFound';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/infomercials" element={<Infomercials />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        <ContactForm />
       </div>
     </Router>
   );
