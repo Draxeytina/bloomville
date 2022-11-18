@@ -1,8 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.scss';
 import Navmenu from './components/Navmenu';
@@ -24,11 +20,26 @@ function App() {
         <Navmenu />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/subsidiaries/logitap-express" element={<LogitapExpress />} />
-          <Route path="/subsidiaries/bloomville-consultancy" element={<BloomvilleConsultancy />} />
-          <Route path="/subsidiaries/bloomville-media" element={<BloomvilleMedia />} />
-          <Route path="/subsidiaries/logitap-freight" element={<LogitapFreight />} />
-          <Route path="/subsidiaries/mayville-brands" element={<MayvilleBrands />} />
+          <Route
+            path="/subsidiaries/logitap-express"
+            element={<LogitapExpress />}
+          />
+          <Route
+            path="/subsidiaries/bloomville-consultancy"
+            element={<BloomvilleConsultancy />}
+          />
+          <Route
+            path="/subsidiaries/bloomville-media"
+            element={<BloomvilleMedia />}
+          />
+          <Route
+            path="/subsidiaries/logitap-freight"
+            element={<LogitapFreight />}
+          />
+          <Route
+            path="/subsidiaries/mayville-brands"
+            element={<MayvilleBrands />}
+          />
           <Route exact path="/about" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/infomercials" element={<Infomercials />} />
