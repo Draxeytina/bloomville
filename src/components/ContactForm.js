@@ -1,6 +1,6 @@
 function ContactForm() {
   return (
-    <div className="contact-from-wrap">
+    <div id="get-in-touch" className="contact-from-wrap">
       <h2>Get in touch</h2>
       <form
         action="https://formspree.io/f/myyvvzda"

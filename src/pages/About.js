@@ -1,6 +1,10 @@
 function About() {
   return (
-    <h1>About</h1>
+    <div>
+      <h2>Directors</h2>
+      <h2>Partners</h2>
+      <h2>Team</h2>
+    </div>
   );
 }
 

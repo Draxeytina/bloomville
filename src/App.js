@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import Infomercials from './pages/Infomercials';
 import PageNotFound from './pages/PageNotFound';
 import ContactForm from './components/ContactForm';
+import Events from './pages/Events';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             path="/subsidiaries/mayville-brands"
             element={<MayvilleBrands />}
           />
+          <Route exact path="/events" element={<Events />} />
           <Route exact path="/about" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/infomercials" element={<Infomercials />} />

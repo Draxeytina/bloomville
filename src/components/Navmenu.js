@@ -43,6 +43,7 @@ function Navmenu() {
                   Logitap Express
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link as={Link} to="/events">Events</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <Nav.Link as={Link} to="/contact-us">Contact Us</Nav.Link>
             </Nav>

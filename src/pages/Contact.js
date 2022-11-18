@@ -1,6 +1,25 @@
 function Contact() {
   return (
-    <h1>Contact Us</h1>
+    <div>
+      <h2>Offices</h2>
+      <div>
+        <div>
+          <h3>Headquarters</h3>
+        </div>
+        <div>
+          <h3>Harare</h3>
+        </div>
+        <div>
+          <h3>Kazungula</h3>
+        </div>
+        <div>
+          <h3>Forbes</h3>
+        </div>
+        <div>
+          <h3>Beitbridge</h3>
+        </div>
+      </div>
+    </div>
   );
 }
 
