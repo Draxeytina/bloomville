@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-$background-color: #f8f9fa;
+$background-color: #fff;
+$background-color-nav: #f8f9fa;
+$font-color1: #e0591a;
+$font-color2: #030;
 $font: 'Poppins', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
 
 body {
   background-color: $background-color;
   font-family: $font;
+  color: $font-color2;
   min-width: 360px;
 }

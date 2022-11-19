@@ -35,7 +35,7 @@ function LogitapFreight() {
         freight forwarding and logistic services regionally and internationally.
       </p>
       <div>
-        <h2>Testimonials</h2>
+        {/* <h2>Testimonials</h2> */}
       </div>
     </div>
   );

@@ -4,8 +4,8 @@ import { useLocation } from 'react-router-dom';
 function PageNotFound() {
   const location = useLocation();
   return (
-    <div>
-      <h1>404</h1>
+    <div className="page-not-found">
+      <h1>404 Page not found</h1>
       <p>
         There is no doc for
         {' '}

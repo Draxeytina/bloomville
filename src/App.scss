@@ -4,30 +4,134 @@
 
 form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 5px;
   margin: 16px 32px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+
+  & button {
+    border-radius: 5px;
+    color: $font-color2;
+    border-width: thin;
+    height: 36px;
+  }
+
+  & button:hover {
+    color: $font-color1;
+    scale: 1.01;
+  }
+
+  & input {
+    border-radius: 5px;
+    border-width: thin;
+    border-color: $font-color2;
+    font-size: 12px;
+    padding: 8px;
+    color: $font-color2;
+  }
+
+  & textarea {
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+    resize: none;
+    height: 81px;
+    padding-left: 5px;
+  }
 }
 
-input {
-  padding: 5px;
-}
-
-textarea {
-  resize: none;
-  height: 81px;
-  padding-left: 5px;
+li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 #logitap-freight-fb {
   border: none;
   overflow: hidden;
+  height: 100%;
 }
 
 .App {
   text-align: center;
   background-color: $background-color;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow:
+    inset 0 -3em 3em rgba(255, 255, 255, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+}
+
+.nav-link,
+.dropdown-item {
+  color: $font-color2;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: $font-color1;
+}
+
+.footer-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  text-align: center;
+  background-color: $background-color-nav;
+  margin-bottom: 0;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+  & .footer-subsidiaries-wrap {
+    text-align: left;
+
+    & h2 {
+      margin-top: 12px;
+      margin-left: 35px;
+      font-size: 16px;
+    }
+
+    & small {
+      margin-left: 35px;
+      margin-bottom: 5px;
+      font-size: x-small;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: $font-color1;
+        }
+      }
+    }
+
+    & ul {
+      text-align: left;
+      margin-left: 5px;
+      font-size: small;
+
+      & a:hover {
+        color: $font-color1;
+      }
+    }
+  }
+
+  & .contact-form-wrap {
+    & h2 {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+  }
+}
+
+.page-not-found {
+  margin-top: 16vw;
 }
 
 .form-1,
@@ -48,8 +152,8 @@ textarea {
 }
 
 .carousel .slide .legend {
-  background: transparentize($color: #f70909, $amount: 0.5);
-  color: black;
+  background: transparentize($color: $font-color1, $amount: 0.5);
+  color: $font-color2;
   bottom: 20px;
   margin-left: -30%;
   width: 60%;
@@ -60,8 +164,14 @@ textarea {
   width: 80%;
 }
 
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: 3px solid $font-color2;
+}
+
 .description {
-  margin: 5px 32px;
+  margin: 0 32px 32px 32px;
+  font-size: small;
 }
 
 @media only screen and (max-width: 667px) {

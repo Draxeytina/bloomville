@@ -4,19 +4,26 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo-nav2.png';
+import Logo2 from '../assets/nav-img-nav2.png';
 
 function Navmenu() {
   return (
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand as={Link} to="/">
             <img
               alt=""
               src={Logo}
               width="45"
               height="45"
+              className="d-inline-block align-top"
+            />
+            <img
+              alt=""
+              src={Logo2}
+              height="42"
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
@@ -31,7 +38,6 @@ function Navmenu() {
                 <NavDropdown.Item as={Link} to="/subsidiaries/logitap-freight">
                   Logitap Freight Services
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/subsidiaries/bloomville-media">
                   Bloomville Media
