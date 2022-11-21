@@ -189,6 +189,11 @@ li a {
 
   & .icons {
     color: $font-color2;
+
+    &:hover {
+      scale: 1.15;
+      color: $font-color1;
+    }
   }
 }
 
