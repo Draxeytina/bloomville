@@ -200,9 +200,14 @@ li a {
 .logitap-services-wrap {
   margin: 30px;
 
+  & #logitap-services {
+    margin-bottom: 2.5rem;
+  }
+
   & .logitap-services-heading {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
 
     & .logitap-service {
       font-size: small;
