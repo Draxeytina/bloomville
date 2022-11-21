@@ -208,4 +208,9 @@ li a {
   .carousel .slide .legend {
     bottom: 10px;
   }
+
+  .footer-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
