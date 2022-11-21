@@ -1,5 +1,11 @@
 import React from 'react'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFirefox,
+  faInstagram,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 import img2 from '../assets/logitapfreight/img2.jpg';
 import img3 from '../assets/logitapfreight/img3.jpg';
 import img4 from '../assets/logitapfreight/img4.jpg';
@@ -8,7 +14,12 @@ function LogitapFreight() {
   return (
     <div>
       <div className="logitap-freight-wrap">
-        <div>
+        <div className="carousel-container">
+          <div className="social-icons">
+            <a aria-label="Website" alt="website" href="https://www.logitapfreight.co.zw/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFirefox} className="icons" /></a>
+            <a aria-label="Instagram" alt="instagram" href="https://www.instagram.com/logitapfreight/?hl=en" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="icons" /></a>
+            <a aria-label="LinkedIn" alt="linkedin" href="https://www.linkedin.com/company/logitap-freight/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="icons" /></a>
+          </div>
           <Carousel>
             <div>
               <img src={img4} alt="logitap freight" />
