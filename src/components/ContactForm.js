@@ -12,7 +12,7 @@ function ContactForm() {
           <input type="text" name="subject" placeholder="Subject" />
         </div>
         <div className="form-2">
-          <textarea name="message" placeholder="Your message" />
+          <textarea name="message" placeholder="Your Message" />
           <button type="submit">Submit</button>
         </div>
       </form>
