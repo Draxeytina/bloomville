@@ -5,6 +5,7 @@ import {
   faFirefox,
   faInstagram,
   faLinkedin,
+  faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import img2 from '../assets/logitapfreight/img2.jpg';
 import img3 from '../assets/logitapfreight/img3.jpg';
@@ -19,11 +20,14 @@ function LogitapFreight() {
             <a aria-label="Website" alt="website" href="https://www.logitapfreight.co.zw/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFirefox} className="icons" /></a>
             <a aria-label="Instagram" alt="instagram" href="https://www.instagram.com/logitapfreight/?hl=en" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="icons" /></a>
             <a aria-label="LinkedIn" alt="linkedin" href="https://www.linkedin.com/company/logitap-freight/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="icons" /></a>
+            <a aria-label="Twitter" alt="twitter" href="https://twitter.com/logitap" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="icons" /></a>
           </div>
           <Carousel>
             <div>
               <img src={img4} alt="logitap freight" />
-              <p className="legend">Meet the team</p>
+              <a href="/about">
+                <p className="legend">Meet the team</p>
+              </a>
             </div>
             <div>
               <img src={img2} alt="logitap freight" />
@@ -33,7 +37,9 @@ function LogitapFreight() {
             </div>
             <div>
               <img src={img3} alt="logitap freight" />
-              <p className="legend">Our Services</p>
+              <a href="#logitap-services">
+                <p className="legend">Our Services</p>
+              </a>
             </div>
           </Carousel>
         </div>
@@ -46,7 +52,10 @@ function LogitapFreight() {
         freight forwarding and logistic services regionally and internationally.
       </p>
       <div>
-        {/* <h2>Testimonials</h2> */}
+        <h2 id="logitap-services">Services</h2>
+      </div>
+      <div>
+        <h2>Testimonials</h2>
       </div>
     </div>
   );
